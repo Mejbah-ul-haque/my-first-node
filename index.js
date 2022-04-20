@@ -20,6 +20,10 @@ const users = [
     { id: 7, name: 'Sohana', email: 'sohana@gmail.com', phone: '01700000000' },
 ]
 
+// app.get('/users', (req, res) => {
+//     res.send(users);
+// })
+
 app.get('/users', (req, res) => {
     // filter by search query parameter
     if (req.query.name) {
